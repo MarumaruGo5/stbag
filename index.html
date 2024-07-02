@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>うちの子オーダーメイドトートバッグ（切り抜き）</title>
+    <style>
+        /* 默认样式 */
+        img, video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+        /* 视频容器样式 */
+        .video-container {
+            position: relative;
+            margin: 0 auto;
+        }
+        /* 封面样式 */
+        .video-container .cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('封面1.jpg'); /* 封面图片地址 */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        /* 媒体查询：针对手机屏幕 */
+        @media screen and (max-width: 768px) {
+            /* 在屏幕宽度小于768px时，图片已经设置为100%，无需额外设置 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 图片部分 -->
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_01.jpg" alt="图片1">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_02.jpg" alt="图片2">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_03.jpg" alt="图片3">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_04.jpg" alt="图片4">
+    <!-- 视频部分 -->
+    <div class="video-container">
+        <video id="myVideo" controls>
+            <source src="视频1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="cover" onclick="playVideo()">Open</div>
+    </div>
 
+    <script>
+        // 获取视频元素
+        var video = document.getElementById('myVideo');
+        // 播放视频函数
+        function playVideo() {
+            video.play();
+            // 视频开始播放时，隐藏封面
+            document.querySelector('.cover').style.display = 'none';
+        }
+        // 视频结束时重新显示封面
+        video.addEventListener('ended', function() {
+            document.querySelector('.cover').style.display = 'block';
+        });
+        // 视频关闭函数
+        function stopVideo() {
+            video.pause();
+            video.currentTime = 0;
+            // 视频停止播放时，显示封面
+            document.querySelector('.cover').style.display = 'block';
+        }
+        // 添加关闭按钮
+        var closeButton = document.createElement('button');
+        closeButton.innerText = 'Close';
+        closeButton.style.position = 'absolute';
+        closeButton.style.top = '10px';
+        closeButton.style.right = '10px';
+        closeButton.style.zIndex = '10';
+        closeButton.onclick = stopVideo;
+        video.parentNode.insertBefore(closeButton, video);
+    </script>
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_01.jpg" alt="图片1">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_02.jpg" alt="图片2">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_03.jpg" alt="图片3">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_04.jpg" alt="图片4">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_05.jpg" alt="图片5">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_06.jpg" alt="图片6">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_07.jpg" alt="图片7">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_08.jpg" alt="图片8">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_09.jpg" alt="图片9">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_10.jpg" alt="图片10">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_11.jpg" alt="图片11">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_12.jpg" alt="图片12">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_13.jpg" alt="图片13">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_14.jpg" alt="图片14">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_15.jpg" alt="图片15">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_16.jpg" alt="图片16">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_17.jpg" alt="图片17">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_18.jpg" alt="图片18">
+    <img src="./图片1/（五箇加筆）（切り抜き）うちの子トートバッグ_single link_Goka review_v0.1(1)_20.jpg" alt="图片19">
+</body>
+</html>
